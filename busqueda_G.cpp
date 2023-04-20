@@ -57,7 +57,7 @@ void busqueda_G::costo(){
 void busqueda_G::n_expandidos(){ 
     int total=0;
     for (auto it = expandidos.begin(); it != expandidos.end(); it++){
-        std::cout<<it->first<<" expanciones= "<<it->first<<std::endl;
+        std::cout<<it->first<<" expanciones= "<<it->second<<std::endl;
         total+=it->second;
     }
     std::cout<<"Expanciones totales = "<<total<<std::endl;
